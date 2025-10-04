@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Космические бои",
+        "author": "Mystic Studio's",
+        "file": "space_game.zip",
+        "description": "Сражайся с инопланетянами!"
+    },
+    {
+        "name": "Зомби хоррор", 
+        "author": "Mystic Studio's",
+        "file": "zombie_game.zip",
+        "description": "Выживай любой ценой!"
+    }
+]

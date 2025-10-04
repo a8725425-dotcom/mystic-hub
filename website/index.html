@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MYSTIC STUDIO'S PLATFORM</title>
+    <style>
+        body { font-family: Arial; background: #1a1a1a; color: white; }
+        .game { background: #333; padding: 15px; margin: 10px; border-radius: 10px; }
+        .download-btn { background: #00ff00; color: black; padding: 10px; border: none; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h1>🎮 MYSTIC STUDIO'S PLATFORM</h1>
+    <div id="games"></div>
+
+    <script>
+        // Здесь будет загрузка игр с сервера
+        const games = [
+            { name: "Космические бои", author: "Mystic Studio's", downloads: 1500 },
+            { name: "Зомби хоррор", author: "Mystic Studio's", downloads: 2300 }
+        ];
+
+        games.forEach(game => {
+            document.getElementById('games').innerHTML += `
+                <div class="game">
+                    <h3>${game.name}</h3>
+                    <p>Автор: ${game.author}</p>
+                    <p>📥 Загрузок: ${game.downloads}</p>
+                    <button class="download-btn">СКАЧАТЬ</button>
+                </div>
+            `;
+        });
+    </script>
+</body>
+</html>
